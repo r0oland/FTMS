@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      4264,        118]
+NotebookOptionsPosition[      3950,        102]
+NotebookOutlinePosition[      4292,        117]
+CellTagsIndexPosition[      4249,        114]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"a", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"-", "b"}], "*", "t"}], "]"}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         RowBox[{"x", "*", "t"}], "]"}], "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"x", "*", "t"}], "]"}]}], ")"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "5"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "500"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5472427649558277`*^9, 3.5472428387947636`*^9}, {
+  3.547242869340974*^9, 3.5472429178899417`*^9}, {3.547243108774875*^9, 
+  3.547243132807725*^9}, {3.547243164856522*^9, 3.5472432083869576`*^9}, {
+  3.5472433438755274`*^9, 3.5472435012742157`*^9}, {3.5472435640042267`*^9, 
+  3.5472435643372445`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 
+    5., $CellContext`b$$ = -0.3600000000000003, $CellContext`x$$ = 21., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], -5, 5}, {
+      Hold[$CellContext`b$$], -5, 5}, {
+      Hold[$CellContext`x$$], 0, 500}}, Typeset`size$$ = {360., {105., 110.}},
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$6985$$ = 0, $CellContext`b$6986$$ = 
+    0, $CellContext`x$6987$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = -5, $CellContext`b$$ = -5, \
+$CellContext`x$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$6985$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$6986$$, 0], 
+        Hold[$CellContext`x$$, $CellContext`x$6987$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[$CellContext`a$$ 
+        Exp[(-$CellContext`b$$) $CellContext`t] (
+         Sin[$CellContext`x$$ $CellContext`t] + 
+         Cos[$CellContext`x$$ $CellContext`t]), {$CellContext`t, 0, 5}, 
+        PlotRange -> All], 
+      "Specifications" :> {{$CellContext`a$$, -5, 5}, {$CellContext`b$$, -5, 
+         5}, {$CellContext`x$$, 0, 500}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{409., {178., 183.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.547243148788368*^9, 3.5472432089049873`*^9}, {
+   3.547243372791024*^9, 3.547243501638236*^9}, 3.547243564926278*^9}]
+}, Open  ]]
+},
+WindowSize->{1904, 955},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1127, 30, 31, "Input"],
+Cell[1709, 54, 2225, 45, 378, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

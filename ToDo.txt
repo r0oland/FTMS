@@ -1,0 +1,10 @@
+Trigger:
+- use Burst mode for multiple measurements with one nozzle spray
+	- not neccesarly, just triple trigger
+- trigger from labview
+	- change trigger speed via LabVIEW
+	- turn on only if everything is working
+- add Background scan option (i.e. turn off nozzle but leave everything else switch on)
+
+Power Amp:
+- active low -> change trigger settings accordingly
