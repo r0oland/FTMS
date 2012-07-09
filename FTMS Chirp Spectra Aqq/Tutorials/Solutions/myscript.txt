@@ -1,4 +1,0 @@
-global In
-Array=[0.01:0.05:5]
-Exp=5*exp(-Array)
-Out = In.*Exp

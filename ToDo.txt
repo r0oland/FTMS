@@ -1,4 +1,5 @@
 Trigger:
+- catch false inputs (start > begining)
 - use Burst mode for multiple measurements with one nozzle spray
 	- not neccesarly, just triple trigger
 - trigger from labview
@@ -8,3 +9,6 @@ Trigger:
 
 Power Amp:
 - active low -> change trigger settings accordingly
+
+OSC:
+- scan background with every measurement (before nozzle is activated
