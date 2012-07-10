@@ -1,5 +1,6 @@
 Trigger:
 - catch false inputs (start > begining)
+	- get correct values for necessary timing (eg. min duration between Power AMP on & AWG on)
 - use Burst mode for multiple measurements with one nozzle spray
 	- not neccesarly, just triple trigger
 - trigger from labview
