@@ -1,0 +1,50 @@
+'Cooke Chirp Pulse Waveform
+
+'Initial Parameters and Constants
+clock=3.96e9
+kg = 1e9 'G constant
+km = 1e6 'M constant
+Kmu = 1e-6 'micro constant
+kn = 1e-9 'n constant
+
+'Linear Frequency Sweeep
+'Parameters
+amp = 1 'amplitude
+pdel = 500 'pulse delay in nanoseconds
+pdur = 4000 'pulse duration in nanoseconds
+startfreq = 20 'start frequency in MHz
+stopfreq = 1500 'end frequency in MHz
+scopetrigdel = 2000 'scope delay in nanoseconds
+scopetrigdur = 1000 'scope duration in nanoseconds
+
+'Pulse
+size = pdel*(clock/kg) 'first dc line length
+"dcline1.wfm" = 0
+size = pdur*(clock/kg) 'pulse length
+k0 = pdur*kn 'sweep period in nanoseconds
+k1 = startfreq*km 'start frequency in MHz
+k2 = stopfreq*km 'stop frequency in MHz
+"pulse.wfm" = amp*sin(2*pi*k1*time+2*pi*(k2-k1)*(time^2)/2/k0)
+"pulseinit.wfm" = Join("dcline1.wfm","pulse.wfm")
+Delete("dcline1.wfm")
+Delete("pulse.wfm")
+size = (scopetrigdel+scopetrigdur+500)*(clock/kg) 'dcline after the pulse
+"dcline2.wfm" = 0
+"chirppulse.wfm" = Join("pulseinit.wfm","dcline2.wfm")
+Delete("pulseinit.wfm")
+Delete("dcline.wfm")
+
+'Marker Setup
+
+bpul = 200 'time delay before pulse in nanosec
+apul = 00 'marker cutoff after pulse
+ampstart = pdel-bpul 'amp opens
+ampend = pdel+pdur+apul 'amp closes
+
+"chirppulse.wfm".marker1 = (time > ampstart*kn and time < ampend*kn)
+
+trigstartscope = pdel+pdur+scopetrigdel
+trigendscope = trigstartscope+scopetrigdur
+
+"chirppulse.wfm".marker2 = time > trigstartscope*kn and time < trigendscope*kn
+
