@@ -18,6 +18,14 @@ For backwards compatibility, if this section is missing, the full length of the 
 Markdown parsed.
 
 ## Installation
+###LabVIEW Driver and Libaries
+To use this software suite just install the provided LBB file or download the following device drivers:
+* OSC driver
+	link
+* Trigger driver
+	link
+* PSG driver
+	link
 
 ##Frequently Asked Questions
 
