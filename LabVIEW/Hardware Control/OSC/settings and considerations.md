@@ -30,12 +30,11 @@ Acquired waveform data uses eight or more bits to represent each data point. The
 ###Time Bases
 - recording time used: 20us (2us/div, 10div)
 	-equals 50 kHz resolution
-- sampling rate used
+- sampling rate used: 500-250 ps/point
+- resulting point number: 40k - 80k
 
 	####Horizontal Acquisition Window Considerations
 The instrument lets you define the horizontal acquisition window, that is, set several parameters that determine the segment of an incoming signal that becomes the waveform record when acquired.
-
-
 
 ####GPIB Interfacing
 You can set the time per division (or time per point) of the main time base.
