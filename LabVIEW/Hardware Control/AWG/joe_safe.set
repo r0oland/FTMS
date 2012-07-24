@@ -1,0 +1,77 @@
+MAGIC 4000
+Version 3
+Instrument 710
+Ch1WaveformSequence "chirppulse.wfm"
+Ch1WaveformSequenceForMixB ""
+Ch1Amplitude 5.0000000000e-01
+Ch1Marker1High 1.0000000000e+00
+Ch1Marker1Low 0.0000000000e+00
+Ch1Marker2High 1.0000000000e+00
+Ch1Marker2Low 0.0000000000e+00
+Clock 3.9600000000e+09
+ClockReference Internal
+ClockSource External
+RunMode Triggered
+TriggerSource External
+TriggerSlope Positive
+TriggerPolarity Positive
+TriggerLevel 1.4000000000e+00
+TriggerImpedance 1kohm
+TriggerInterval 1.0000000000e-01
+FGFrequency 2.0000000000e+07
+Ch1FGFunction Sine
+Ch1FGAmplitude 1.0000000000e+00
+Ch1FGPolarity Normal
+Ch1FGDuty 1.0000000000e+01
+FGState False
+SyncState False
+SyncStateIsMaster True
+MixState False
+MixRatioA 5.0000000000e+01
+MixRatioB 5.0000000000e+01
+UpdateSetting False
+MarkerSelectSetting False
+WaveformLengthSetting SameA
+LCDBackLight Enabled
+HilightColor 0
+HardcopyFormat BMP
+HardcopyDrive Main
+KeyboardType ASCII
+KnobDirection Forward
+RemoteControl GPIB
+GpibConfiguration Talk/Listen
+GpibAddress 2
+DHCPClient Disabled
+SlaveIPAddress 
+IPAddress 10.1.251.62
+SubnetMask 255.255.254.0
+Gateway1Address 
+Gateway1Network 
+Gateway2Address 
+Gateway2Network 
+Gateway3Address 
+Gateway3Network 
+FTPServer Enabled
+Net1DriveName "NET1"
+Net1IPAddress 
+Net1RemoteDirectory ""
+Net1Access Off
+Net2DriveName "NET2"
+Net2IPAddress 
+Net2RemoteDirectory ""
+Net2Access Off
+Net3DriveName "NET3"
+Net3IPAddress 
+Net3RemoteDirectory ""
+Net3Access Off
+ESER 0
+SRER 0
+OEN 0
+QEN 0
+PSC True
+Diagnostic All
+DiagCycles 1
+DHCPLeaseTime 28800
+NFSTimeout 300
+FTPVersion Standard
+
