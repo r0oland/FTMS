@@ -1,7 +1,60 @@
-# Application notes on TRIG
-Model: Stanford Research System DG645 Digital Delay Generator
+# TRIG
+## Application notes on Stanford Research System 
+## DG645 Digital Delay Generator 
+source: http://www.thinksrs.com/products/DG645.htm
 
-## Communication to Device
-GPIB Bus, Adress ???
+## General Info
+There are five front-panel outputs: T0, AB, CD, EF and GH. The T0 output is asserted for the duration of the timing cycle. The leading edge of T0 is the zero time reference. The programmed delays (A, B, C, D, E, F, G and H) are set from 0 s to 2000 s, with 5 ps resolution, to control the timing of the leading and trailing edges of the four pulse outputs.
+
+Each front-panel output can drive a 50 Ω load and has a 50 Ω source impedance. Output amplitudes can be set from 0.5 to 5.0V, and output offsets can range over ±2 VDC to source virtually any logic level (NIM, ECL, PECL, CMOS, etc.). Output transition times are less than 2 ns at any output amplitude.
+
+## Chirp Setup Specific Info
+### Delay Index
+0 - T0 = nozzle start (TTL) = 0
+1 - T = overall duration + 25ns (can't be changed)
+2 - A = power AMP START
+3 - B = power AMP STOP
+4 - C = AWG START (TTL)
+5 - D = AWG STOP (NA)
+6 - E = SWITCH ON 
+7 - F = SWITCH OFF
+8 - G = OSC START (TTL)
+9 - H = OSC STOP (NA)
+notes:
+- for signals marked as (TTL), only the rising flank of the signal is of interest, since it is used as a trigger (valid for AWG, OSC and the nozzle)
+- hence the duration has no meaning, however, the duration should not be to short to give the instrument enough time to actually recognize the trigger signal (good value???)
+
+### Restrictions 
+In order to measure something and not to destroy the delicate amplifiers, the following restrictions must be met when setting up the delay times and durations:
+- T0 is always zero, you can't change that...
+- T has no influence on the actual duration the nozzle is open, since the nozzle time is controlled by the nozzle controller and must be set manually
+- the AWG trigger must start after the power amp is activated, otherwise the AWG signal will not be send to the chamber since the power amp is still switch off
+- the power amp must be switched on for the full duration of the AWG signal (check waveform length using the **"ArbExpress Application"**, approx. 4us) 
+  - C = AWG START > A = power AMP START
+- the SWITCH must NOT be switched on before the power amp is switched off 
+  - E = SWITCH ON > B = power AMP STOP
+- OSC must be activated with or shortly after SWITCH is turned on to measure the complete and exp. decaying waveform 
+
+### Notes to LabVIEW Software 
+- the timing info stored in the TRIG is read and display during the startup of *"config_TRIG.vi"*
+- when the timing data is written to the trigger (via the "write" button), it is checked for gross violation of the timing info (see valid timing data), corrected and then send to the trigger. It is then immediately read from the trigger and displayed to ensure a correct write process
+- the data displayed in *"delay data in delay generator"* is displayed in seconds and if necessary with a correspondig suffix (m-milli,u-micro,...) 
+- the *"display resolution"* sets the number of points displayed in the graph and has NO INFLUENCE on the resolution of the trigger itself
+
+#### valid data entry
+- all start times are referenced to T0 = start of the nozzle pulse
+- all durations are referenced to their correspondig start time (otherwise it wouldn't be a duration...)
+- you're entered values for start time and duration have to match the restrictions (see **Restrictions** section above)
+
+#### internal data handling
+- the data that is send to and read from the trigger is in seconds
+- internal data handling is also done in seconds 
+- the displayed time unit can be chosen freely, it is then converted to seconds internally and send to the trigger
+
+#### timing graph
+The timing graph does not show the actual TTL signal for all signals. For signals with negative polarity it shows the inverse of the signal, that is it shows when the signal is "active".
+
+### Communication to Device
+GPIB Bus, Address ???
 
 ## VISA Commands
