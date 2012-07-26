@@ -78,5 +78,5 @@ GPIB Bus, Address 7
   - Set (query) the burst period {to t}. The burst period sets the time between delay cycles during a burst. The burst period may range from 100 ns to 2000 – 10 ns in 10 ns steps.
 - BURM(?){i} **Burst Mode**
   - Set (query) the burst mode {to i}. If i is 0, burst mode is disabled. If i is 1, burst mode is enabled.
-BURT(?){i} **Burst T0 Configuration**
+- BURT(?){i} **Burst T0 Configuration**
   - Set (query) the burst T0 configuration {to i}. If i is 0, the T0 output is enabled for all delay cycles of the burst. If i is 1, the T0 output is enabled for first delay cycle of the burst only.

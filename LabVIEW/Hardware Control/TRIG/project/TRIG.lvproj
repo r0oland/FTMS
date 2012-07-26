@@ -14,6 +14,7 @@
 		<Item Name="config_TRIG.vi" Type="VI" URL="../../config_TRIG.vi"/>
 		<Item Name="manual_trigger.vi" Type="VI" URL="../../manual_trigger.vi"/>
 		<Item Name="trigger_delay.vi" Type="VI" URL="../../trigger_delay.vi"/>
+		<Item Name="on_off_button.ctl" Type="VI" URL="../../../../General/on_off_button.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="subDisplayMessage.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/DisplayMessageBlock.llb/subDisplayMessage.vi"/>
@@ -52,6 +53,12 @@
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
+				<Item Name="Open URL in Default Browser.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser.vi"/>
+				<Item Name="Open URL in Default Browser (string).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (string).vi"/>
+				<Item Name="Open URL in Default Browser core.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser core.vi"/>
+				<Item Name="Open URL in Default Browser (path).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (path).vi"/>
+				<Item Name="Path to URL.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL.vi"/>
+				<Item Name="Escape Characters for HTTP.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Escape Characters for HTTP.vi"/>
 			</Item>
 			<Item Name="array_unit_conversion.vi" Type="VI" URL="../../sub_vis/array_unit_conversion.vi"/>
 			<Item Name="check_and_correct_input.vi" Type="VI" URL="../../sub_vis/check_and_correct_input.vi"/>
@@ -65,6 +72,10 @@
 			<Item Name="unit_to_multiplicator.vi" Type="VI" URL="../../sub_vis/unit_to_multiplicator.vi"/>
 			<Item Name="write_timing_array.vi" Type="VI" URL="../../sub_vis/write_timing_array.vi"/>
 			<Item Name="global.vi" Type="VI" URL="../../../../global.vi"/>
+			<Item Name="reset_trig.vi" Type="VI" URL="../../sub_vis/reset_trig.vi"/>
+			<Item Name="basic_settings.vi" Type="VI" URL="../../sub_vis/basic_settings.vi"/>
+			<Item Name="enable_burst.vi" Type="VI" URL="../../sub_vis/enable_burst.vi"/>
+			<Item Name="float_unit_conversion.vi" Type="VI" URL="../../sub_vis/float_unit_conversion.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="manTrig" Type="EXE">
