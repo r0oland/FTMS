@@ -41,29 +41,29 @@ In order to measure something and not to destroy the delicate amplifiers, the fo
   - E = SWITCH ON > B = power AMP STOP
 - OSC must be activated with or shortly after SWITCH is turned on to measure the complete and exp. decaying waveform 
 
-### Notes to LabVIEW Software 
+## Notes to LabVIEW Software 
 - the timing info stored in the TRIG is read and display during the startup of *"config_TRIG.vi"*
 - when the timing data is written to the trigger (via the "write" button), it is checked for gross violation of the timing info (see valid timing data), corrected and then send to the trigger. It is then immediately read from the trigger and displayed to ensure a correct write process
 - the data displayed in *"delay data in delay generator"* is displayed in seconds and if necessary with a correspondig suffix (m-milli,u-micro,...) 
 - the *"display resolution"* sets the number of points displayed in the graph and has NO INFLUENCE on the resolution of the trigger itself
 
-#### valid data entry
+### valid data entry
 - all start times are referenced to T0 = start of the nozzle pulse
 - all durations are referenced to their correspondig start time (otherwise it wouldn't be a duration...)
 - you're entered values for start time and duration have to match the restrictions (see **Restrictions** section above)
 
-#### internal data handling
+### internal data handling
 - the data that is send to and read from the trigger is in seconds
 - internal data handling is also done in seconds 
 - the displayed time unit can be chosen freely, it is then converted to seconds internally and send to the trigger
 
-#### timing graph
+### timing graph
 The timing graph does not show the actual TTL signal for all signals. For signals with negative polarity it shows the inverse of the signal, that is it shows when the signal is "active".
 
-### Communication to Device
-GPIB Bus, Address 7
+## Communication to Device
+via GPIB Bus, Address 7
 
-#### VISA Commands
+### VISA Commands
 - TSRC(?){i} **Trigger Source** 
   - Set (query) the trigger source {to i}.
 - DLAY(?)c{,d,t} **Delay**
