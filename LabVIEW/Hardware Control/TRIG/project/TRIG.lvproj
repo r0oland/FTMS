@@ -97,22 +97,80 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{79937941-9A0A-4D16-B847-5C51C3DDFAA9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{66B5AB7B-794D-41A6-82B1-D806D14DB81F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/manual_trigger.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">manTrig</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">3</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">4</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">manTrig</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 </Property>
 				<Property Name="TgtF_productName" Type="Str">manTrig</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{8C680A8E-0187-49A9-86F8-CFF4B0B878B4}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">manTrig.exe</Property>
+			</Item>
+			<Item Name="Trigger Control" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{C6DCEF1F-E23F-4EC4-B4FE-F3B4A00180FA}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{01B36FFE-4E5F-4010-BD1D-6CCF2E3F2BDC}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{930EC27F-926B-4DAC-814D-6863862E6E9C}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Trigger Control</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../build</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{BFBB62F7-139B-4632-962C-A2749128C029}</Property>
+				<Property Name="Destination[0].destName" Type="Str">Trigger Control.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../build/Trigger Control.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../build/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{66B5AB7B-794D-41A6-82B1-D806D14DB81F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/config_TRIG.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">3</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/manual_trigger.vi</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Window run-time position</Property>
+				<Property Name="Source[2].properties[0].value" Type="Str">Centered</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Show fp when called</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Trigger Control</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">2</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">Trigger Control</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 </Property>
+				<Property Name="TgtF_productName" Type="Str">Trigger Control</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{22C10762-D6C6-46A5-BB45-5CDE864BDA87}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Trigger Control.exe</Property>
 			</Item>
 		</Item>
 	</Item>
