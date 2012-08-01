@@ -80,3 +80,32 @@ via GPIB Bus, Address 7
   - Set (query) the burst mode {to i}. If i is 0, burst mode is disabled. If i is 1, burst mode is enabled.
 - BURT(?){i} **Burst T0 Configuration**
   - Set (query) the burst T0 configuration {to i}. If i is 0, the T0 output is enabled for all delay cycles of the burst. If i is 1, the T0 output is enabled for first delay cycle of the burst only.
+
+#**TRIG1 Remarks**
+#SRS DG535
+
+##Default settings after calling init_TRIG1.vi
+- delay 
+  - referenced to t0
+  - set to 0
+- output AB & CD
+  - TTL levels
+  - impedance 50Ohm
+  - no inversion (TRIG1 has both inverted and noninverted outputs, so one can choose the polarity by taking the other output)
+- trigger mode
+  - SS = single shot
+  - can be triggered via GPIB command SS
+
+## Setting delays for TRIG1
+**- Output AB (nozzle pulse):**
+  - The nozzle pulse defines the start of one measurement with n bursts, both for the background and the experiment scan
+  - delay A referenced to T0
+  - delay A is always 0
+  - delay B is referenced to A
+  - delay B always equals 5us (nozzle controlled by rising edge, not by duration)
+**- Output CD (TRIG2 pulse)**
+  - starts n burstes after the molecular delay time passed by triggering TRIG2 which then triggers the AMP, AWG, SWITCH and OSC n times and with a delay equal to the burst period
+  - delay C referenced to T0
+  - delay C sets the molecular delay time 
+  - delay D referenced to C
+  - delay D always equals 5us (TRIG2 controlled by rising edge, not by duration)
