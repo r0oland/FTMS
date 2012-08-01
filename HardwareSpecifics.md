@@ -1,35 +1,24 @@
-#FTMS 
-##Fourier Transfrom Microwave Spectroscopy Measurement and Control Suite 
-##Hardware 
+# FTMS 
+## Fourier Transfrom Microwave Spectroscopy Measurement and Control Suite 
+## Hardware Specifics
 
 **Contributors**: Johannes Rebling
 
-**Tags:** FTMS, LabVIEW, Fourier Transfrom, Microwave Spectroscopy 
+**Tags:** FTMS, Fourier Transfrom, Microwave Spectroscopy
 
-**Requirements Software:** LabVIEW 2011 or newer
-
-**Requirements Hardware:** OSC, Trigger, Signal Generator, AWG, GPIB interface,...
+!**Requirements Hardware:** OSC, Trigger, Signal Generator, AWG, GPIB interface,...
 
 **License:** Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
 
 **License URL:** http://creativecommons.org/licenses/by-nc-sa/3.0/
 
-This LabVIEW program provides all necessary software tools to control and measure microwave spectra using a fourier transform microwave setup as described below. 
+!**related documments:** timing diagram, ...
 
-! ## Installation
-###LabVIEW Driver and Libaries
-To use this software suite just install the provided LBB file or download the following device drivers:
-* OSC driver
-	link
-* Trigger driver
-	link
-* PSG driver
-	link
+This documents provides specific information regarding the setups used to measure microwave spectra using a chirped pulse microwave spectroscopy setup. 
 
 # Trigger Setup
 # Application notes on Stanford Research System 
 # DG535 & DG645 Digital Delay Generator 
-source: http://www.thinksrs.com/products/DG645.htm
 
 ## TRIG1 - specific informations
 Model: SRS DG535
@@ -60,7 +49,9 @@ Model: SRS DG535
   - delay D referenced to C
   - delay D always equals 5us (TRIG2 controlled by rising edge, not by duration)
 
+//my comments
 ## TRIG2 - specific informations
+source: http://www.thinksrs.com/products/DG645.htm
 There are five front-panel outputs: T0, AB, CD, EF and GH. The T0 output is asserted for the duration of the timing cycle. The leading edge of T0 is the zero time reference. The programmed delays (A, B, C, D, E, F, G and H) are set from 0 s to 2000 s, with 5 ps resolution, to control the timing of the leading and trailing edges of the four pulse outputs.
 
 Each front-panel output can drive a 50 Ω load and has a 50 Ω source impedance. Output amplitudes can be set from 0.5 to 5.0V, and output offsets can range over ±2 VDC to source virtually any logic level (NIM, ECL, PECL, CMOS, etc.). Output transition times are less than 2 ns at any output amplitude.
