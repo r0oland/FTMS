@@ -1,4 +1,4 @@
-﻿# FTMS 
+# FTMS 
 ## Fourier Transfrom Microwave Spectroscopy Measurement and Control Suite 
 ## Software Specifics
 
@@ -17,8 +17,9 @@
 This documents describes all software tools that are used to control and measure microwave spectra using a fourier transform microwave setup as described below. 
 
 ------------------------------------------------------------------------------------
-! # Installation
-###LabVIEW Driver and Libraries
+# Installation
+!
+##LabVIEW Driver and Libraries
 To use this software suite just install the provided LBB file or download the following device drivers:
 * OSC driver
 	link
@@ -28,7 +29,8 @@ To use this software suite just install the provided LBB file or download the fo
 	link
 
 ------------------------------------------------------------------------------------
-! # Notes to LabVIEW Software 
+# Notes to LabVIEW Software 
+!
 - the timing info stored in the TRIG is read and display during the startup of *"config_TRIG.vi"*
 - when the timing data is written to the trigger (via the "write" button), it is checked for gross violation of the timing info (see valid timing data), corrected and then send to the trigger. It is then immediately read from the trigger and displayed to ensure a correct write process
 - the data displayed in *"delay data in delay generator"* is displayed in seconds and if necessary with a corresponding suffix (m-milli,u-micro,...) 
@@ -42,6 +44,7 @@ The timing is configured using *[config_TRIG.vi]* or in the *Chirp FTMS* softwar
 
 ## Usage
 !... initial values loaded from config file specified in the *Chirp FTMS* software 
+
 ### time unit
 - the data that is send to and read from the trigger in seconds
 - internal data handling is also done in seconds for all sub VIs 
@@ -49,7 +52,8 @@ The timing is configured using *[config_TRIG.vi]* or in the *Chirp FTMS* softwar
 - the entered time data (start time, duration, burst period, molecular delay) is converted to seconds internally and send to the triggers
 - all data stored in global variables and the config files is also in second 
 
-!### timing diagram
+### timing diagram
+!
 The timing diagram does not show the actual TTL signal for all signals. For signals with negative polarity it shows the inverse of the signal, that is it shows when the signal is "active".
 
 ## Name Conventions & Dependencies
@@ -96,6 +100,7 @@ duration = molecular delay + n * burst period
 - one burst is the smallest unit that actually yields a time domain signal, with length *burst time* 
 - the burst period is at least as long as one delay cycle, but might be setup to be longer
 - the burst period is determined by the *delay cycle* and is a experimental specific timing value itself (see below)
+
 **delay cycle**
 
 - consists of the following steps:
