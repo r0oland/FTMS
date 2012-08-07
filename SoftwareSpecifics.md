@@ -69,10 +69,14 @@ duration = number of measurements * meas time
 - might include several measurements 
 
 **meas time** 
-duration = N * meas cycle
+duration = N * meas period
 
 - time for measurement of one spectrum (approx. 2GHz freq. range)
 - includes several *meas cycles*
+
+**meas period**
+
+- period between single meas cycles
 
 **meas cycle**
 duration = background cycle + molec cycle
