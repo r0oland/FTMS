@@ -1,8 +1,0 @@
-MAGIC 4000
-Version 3
-Instrument AWG710
-Ch1WaveformSequence "200M_to_2GHz_4us.wfm"
-Ch1Amplitude 2
-Ch1Offset 0
-Clock 4200000000
-ClockReference Internal
