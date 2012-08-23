@@ -10,9 +10,10 @@
 
 **Requirements Hardware:** OSC, Trigger, Signal Generator, AWG, GPIB interface,...
 
-**License:** Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. 
+To view a copy of this license, visit:
+http://creativecommons.org/licenses/by-nc-sa/3.0/ 
 
-**License URL:** http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 This LabVIEW program provides all necessary software tools to control and measure microwave spectra using a fourier transform microwave setup as described below. 
 
