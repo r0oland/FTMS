@@ -112,11 +112,11 @@
 				<Item Name="Configure Digital IQ Data.vi" Type="VI" URL="../Public/Configure/Digital Signal Interface/Configure Digital IQ Data.vi"/>
 				<Item Name="Digital Signal Interface.mnu" Type="Document" URL="/&lt;instrlib&gt;/Agilent PSG MXG Series/Public/Configure/Digital Signal Interface/Digital Signal Interface.mnu"/>
 			</Item>
-			<Item Name="Configure Frequency.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Agilent PSG MXG Series/Public/Configure/Configure Frequency.vi"/>
+			<Item Name="Configure Frequency.vi" Type="VI" URL="../Public/Configure/Configure Frequency.vi"/>
 			<Item Name="Configure Frequency Channel.vi" Type="VI" URL="../Public/Configure/Configure Frequency Channel.vi"/>
 			<Item Name="Configure Reference Oscillator.vi" Type="VI" URL="../Public/Configure/Configure Reference Oscillator.vi"/>
 			<Item Name="Configure Reference Oscillator Auto Source.vi" Type="VI" URL="../Public/Configure/Configure Reference Oscillator Auto Source.vi"/>
-			<Item Name="Configure Power.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Agilent PSG MXG Series/Public/Configure/Configure Power.vi"/>
+			<Item Name="Configure Power.vi" Type="VI" URL="../Public/Configure/Configure Power.vi"/>
 			<Item Name="Configure ALC.vi" Type="VI" URL="../Public/Configure/Configure ALC.vi"/>
 			<Item Name="Configure ALC Search.vi" Type="VI" URL="../Public/Configure/Configure ALC Search.vi"/>
 			<Item Name="Configure RF Output.vi" Type="VI" URL="../Public/Configure/Configure RF Output.vi"/>
@@ -132,14 +132,14 @@
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Error Query.vi" Type="VI" URL="../Public/Utility/Error Query.vi"/>
-			<Item Name="Reset.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Agilent PSG MXG Series/Public/Utility/Reset.vi"/>
+			<Item Name="Reset.vi" Type="VI" URL="../Public/Utility/Reset.vi"/>
 			<Item Name="Revision Query.vi" Type="VI" URL="../Public/Utility/Revision Query.vi"/>
 			<Item Name="Self-Test.vi" Type="VI" URL="../Public/Utility/Self-Test.vi"/>
 			<Item Name="Query Instrument Information.vi" Type="VI" URL="../Public/Utility/Query Instrument Information.vi"/>
 			<Item Name="Utility.mnu" Type="Document" URL="/&lt;instrlib&gt;/Agilent PSG MXG Series/Public/Utility/Utility.mnu"/>
 		</Item>
-		<Item Name="Close.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Agilent PSG MXG Series/Public/Close.vi"/>
-		<Item Name="Initialize.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Agilent PSG MXG Series/Public/Initialize.vi"/>
+		<Item Name="Close.vi" Type="VI" URL="../Public/Close.vi"/>
+		<Item Name="Initialize.vi" Type="VI" URL="../Public/Initialize.vi"/>
 		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
 		<Item Name="dir.mnu" Type="Document" URL="../Public/dir.mnu"/>
 	</Item>

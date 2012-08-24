@@ -39,15 +39,15 @@ TDS 7254, TDS 7254B, TDS 7404, TDS 7404B, TDS 7704B, MSO72004, MSO71604, MSO7080
 			<Item Name="Configure.mnu" Type="Document" URL="/&lt;instrlib&gt;/Tektronix 7000 Series/Public/Configure/Configure.mnu"/>
 			<Item Name="Autosetup.vi" Type="VI" URL="../Public/Configure/Autosetup.vi"/>
 			<Item Name="Configure A to B Sequence Trigger.vi" Type="VI" URL="../Public/Configure/Configure A to B Sequence Trigger.vi"/>
-			<Item Name="Configure A Trigger Mode.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Configure/Configure A Trigger Mode.vi"/>
-			<Item Name="Configure Acquisition.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Configure/Configure Acquisition.vi"/>
+			<Item Name="Configure A Trigger Mode.vi" Type="VI" URL="../Public/Configure/Configure A Trigger Mode.vi"/>
+			<Item Name="Configure Acquisition.vi" Type="VI" URL="../Public/Configure/Configure Acquisition.vi"/>
 			<Item Name="Configure Bus Source (I2C).vi" Type="VI" URL="../Public/Configure/Configure Bus Source (I2C).vi"/>
 			<Item Name="Configure Bus Source (Parallel).vi" Type="VI" URL="../Public/Configure/Configure Bus Source (Parallel).vi"/>
 			<Item Name="Configure Bus Source (SPI-Clock).vi" Type="VI" URL="../Public/Configure/Configure Bus Source (SPI-Clock).vi"/>
 			<Item Name="Configure Bus Source (SPI-Data).vi" Type="VI" URL="../Public/Configure/Configure Bus Source (SPI-Data).vi"/>
 			<Item Name="Configure Bus Source (SPI-Select).vi" Type="VI" URL="../Public/Configure/Configure Bus Source (SPI-Select).vi"/>
 			<Item Name="Configure Bus Source.vi" Type="VI" URL="../Public/Configure/Configure Bus Source.vi"/>
-			<Item Name="Configure Channel.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Configure/Configure Channel.vi"/>
+			<Item Name="Configure Channel.vi" Type="VI" URL="../Public/Configure/Configure Channel.vi"/>
 			<Item Name="Configure Continuous Acquisition.vi" Type="VI" URL="../Public/Configure/Configure Continuous Acquisition.vi"/>
 			<Item Name="Configure Cursors.vi" Type="VI" URL="../Public/Configure/Configure Cursors.vi"/>
 			<Item Name="Configure Digital Channel.vi" Type="VI" URL="../Public/Configure/Configure Digital Channel.vi"/>
@@ -67,7 +67,7 @@ TDS 7254, TDS 7254B, TDS 7404, TDS 7404B, TDS 7704B, MSO72004, MSO71604, MSO7080
 			<Item Name="Configure Trigger (Communication - AMI Or Subtypes).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Communication - AMI Or Subtypes).vi"/>
 			<Item Name="Configure Trigger (Communication - CMI).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Communication - CMI).vi"/>
 			<Item Name="Configure Trigger (Communication - NRZ,MLT3).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Communication - NRZ,MLT3).vi"/>
-			<Item Name="Configure Trigger (Edge).vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Configure/Configure Trigger (Edge).vi"/>
+			<Item Name="Configure Trigger (Edge).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Edge).vi"/>
 			<Item Name="Configure Trigger (Glitch).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Glitch).vi"/>
 			<Item Name="Configure Trigger (I2C - Address Or Data).vi" Type="VI" URL="../Public/Configure/Configure Trigger (I2C - Address Or Data).vi"/>
 			<Item Name="Configure Trigger (I2C - Start,Stop,Missing Ack).vi" Type="VI" URL="../Public/Configure/Configure Trigger (I2C - Start,Stop,Missing Ack).vi"/>
@@ -83,7 +83,7 @@ TDS 7254, TDS 7254B, TDS 7404, TDS 7404B, TDS 7704B, MSO72004, MSO71604, MSO7080
 			<Item Name="Configure Trigger (Video).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Video).vi"/>
 			<Item Name="Configure Trigger (Width).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Width).vi"/>
 			<Item Name="Configure Trigger (Window).vi" Type="VI" URL="../Public/Configure/Configure Trigger (Window).vi"/>
-			<Item Name="Configure Trigger.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Configure/Configure Trigger.vi"/>
+			<Item Name="Configure Trigger.vi" Type="VI" URL="../Public/Configure/Configure Trigger.vi"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
 			<Item Name="Low Level" Type="Folder">
@@ -114,7 +114,7 @@ TDS 7254, TDS 7254B, TDS 7404, TDS 7404B, TDS 7704B, MSO72004, MSO71604, MSO7080
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Utility.mnu" Type="Document" URL="/&lt;instrlib&gt;/Tektronix 7000 Series/Public/Utility/Utility.mnu"/>
-			<Item Name="Error Query.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Utility/Error Query.vi"/>
+			<Item Name="Error Query.vi" Type="VI" URL="../Public/Utility/Error Query.vi"/>
 			<Item Name="Reset.vi" Type="VI" URL="../Public/Utility/Reset.vi"/>
 			<Item Name="Self-Test.vi" Type="VI" URL="../Public/Utility/Self-Test.vi"/>
 			<Item Name="Read Waveform From File.vi" Type="VI" URL="../Public/Utility/Read Waveform From File.vi"/>
@@ -122,7 +122,7 @@ TDS 7254, TDS 7254B, TDS 7404, TDS 7404B, TDS 7704B, MSO72004, MSO71604, MSO7080
 		</Item>
 		<Item Name="dir.mnu" Type="Document" URL="../Public/dir.mnu"/>
 		<Item Name="Initialize.vi" Type="VI" URL="../Public/Initialize.vi"/>
-		<Item Name="Close.vi" Type="VI" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2011/instr.lib/Tektronix 7000 Series/Public/Close.vi"/>
+		<Item Name="Close.vi" Type="VI" URL="../Public/Close.vi"/>
 		<Item Name="VI Tree.vi" Type="VI" URL="../Public/VI Tree.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
